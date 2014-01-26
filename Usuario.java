@@ -1,5 +1,15 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package biblioteca;
+
+/**
+ *
+ * @author levi
+ */
 public abstract class Usuario {
-    private String codigo;
+    private int codigo;
     private String nome;
     
     public boolean reservar(){
@@ -9,10 +19,14 @@ public abstract class Usuario {
     public boolean devolver(){
         return true;
     }
-    public String getCodigo(){
+    public int getCodigo(){
         return codigo;
     }
     public String getNome(){
         return nome;
+    }
+    public Usuario(int codigo, String nome){
+        this.codigo=codigo;
+        this.nome=nome;
     }
 }
