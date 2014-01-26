@@ -1,3 +1,14 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package biblioteca;
+import java.util.*;
+
+/**
+ *
+ * @author levi
+ */
 public class Biblioteca {
     private Material[] materiais;
     private Usuario[] usuarios;
@@ -12,48 +23,27 @@ public class Biblioteca {
         
     }
     public void inicializar(){
-        Scanner in = new Scanner(System.in);
-        int qnt;
-        System.out.println("digite a quantidade de cds");
-        qnt=in.nextInt();
-        String autores;
-        int faixas;
-        int ano;
-        String codigo;
-        String titulo;
-        for (int i=0;i<qnt;i++){
-            System.out.println("Cd " + Integer.toString(i+1));
-            System.out.println("Autores:");
-            autores=in.nextLine();
-            System.out.println("numero de faixas:");
-            faixas=in.nextInt();
-            System.out.println("ano:");
-            ano=in.nextInt();
-            System.out.println("código:");
-            codigo=in.nextLine();
-            System.out.println("Título:");
-            titulo=in.nextLine();
-            materiais[materiais.length] = new Cd(autores,faixas,ano,codigo,titulo);
-        }
-        
-        System.out.println("digite a quantidade de dvds");
-        qnt=in.nextInt();
-        
-        for (int i=0;i<qnt;i++){
-            System.out.println("DVD " + Integer.toString(i+1));
-            System.out.println("Autores:");
-            autores=in.nextLine();
-            System.out.println("numero de faixas:");
-            faixas=in.nextInt();
-            System.out.println("ano:");
-            ano=in.nextInt();
-            System.out.println("código:");
-            codigo=in.nextLine();
-            System.out.println("Título:");
-            titulo=in.nextLine();
-            materiais[materiais.length] = new Cd(autores,faixas,ano,codigo,titulo);
-        }
-        
+        usuarios[usuarios.length] = new AlunoGraduacao(123,"João da  Silva");
+        usuarios[usuarios.length] = new AlunoPos(456,"Luiz Fernando Rodrigues");
+        usuarios[usuarios.length] = new AlunoGraduacao(789,"Pedro Paulo");
+        usuarios[usuarios.length] = new Professor(100,"Carlos Lucena");
+        materiais[materiais.length] = new Livro(100,"Engenharia de Software", "Addison Wesley", "Ian Sommervile",6,2000);
+        materiais[materiais.length] = new Livro(101,"UML - Guia do Usuário","Campus","Grady Booch, James Rumbaugh, Ivar Jacobson",7,2000);
+        materiais[materiais.length] = new Revista(200,"IEEE Transactions on Software Engineering",53,"Setembro",2006);
+        materiais[materiais.length] = new Revista(201,"IEEE Transactions on Software Engineering",54,"Outubro",2006);
+        materiais[materiais.length] = new Cd(300,"Back To Black","Amy Winehouse","Rehab, You Know I'm No Good, Me & Mr Jones", 2006);
+        materiais[materiais.length] = new Cd(301,"Iê Iê Iê", "Arnaldo Antunes", "Longe, Invejoso, Envelhecer", 2009);
+        materiais[materiais.length] = new  Dvd(400,"Indiana Jones and the Kingdom of the Crystal Skull","Harrison Ford, Cate Blanchett",2008,4);
+        materiais[materiais.length] = new  Dvd(401,"Incredible Hulk","William Hurt, Tim Blake Nelson", 2008,4);
+        exemplares[exemplares.length] = new Exemplar(100,1,"Disponível");
+        exemplares[exemplares.length] = new Exemplar(100,2,"Disponível");
+        exemplares[exemplares.length] = new Exemplar(101,3,"Disponível");
+        exemplares[exemplares.length] = new Exemplar(200,4,"Disponível");
+        exemplares[exemplares.length] = new Exemplar(201,5,"Disponível");
+        exemplares[exemplares.length] = new Exemplar(300,6,"Disponível");
+        exemplares[exemplares.length] = new Exemplar(300,7,"Disponível");
+        exemplares[exemplares.length] = new Exemplar(400,8,"Disponível");
+        exemplares[exemplares.length] = new Exemplar(400,9,"Disponível");
         
         
     }
