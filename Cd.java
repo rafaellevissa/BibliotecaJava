@@ -1,18 +1,28 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package biblioteca;
+
+/**
+ *
+ * @author levi
+ */
 public class Cd extends Material{
     private String autores;
-    private int faixas;
+    private String faixas;
     private int ano;
     
     public String getAutores(){
         return autores;
     }
-    public int getFaixas(){
+    public String getFaixas(){
         return faixas;
     }
     public int getAno(){
         return ano;
     }
-    public Cd(String autores, int faixas, int ano, String codigo, String titulo){
+    public Cd(int codigo, String titulo, String autores, String faixas, int ano){
         super(codigo,titulo);
         this.ano=ano;
         this.autores=autores;
