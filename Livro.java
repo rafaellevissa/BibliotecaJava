@@ -1,4 +1,14 @@
-public class Livro {
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package biblioteca;
+
+/**
+ *
+ * @author levi
+ */
+public class Livro extends Material{
     private String editora;
     private String autores;
     private int edicao;
@@ -15,5 +25,12 @@ public class Livro {
     }
     public int getAno(){
         return ano;
+    }
+    public Livro(int codigo,String titulo, String editora, String autores, int edicao, int ano){
+        super(codigo, titulo);
+        this.ano=ano;
+        this.autores=autores;
+        this.edicao=edicao;
+        this.editora=editora;       
     }
 }
