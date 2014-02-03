@@ -1,13 +1,5 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package biblioteca;
+package BibliotecaJava;
 
-/**
- *
- * @author levi
- */
 public class Exemplar {
     private int codigoMat;
     private int codigoExemp;
