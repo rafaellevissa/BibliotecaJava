@@ -1,24 +1,25 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package biblioteca;
+package BibliotecaJava;
 import java.util.*;
-/**
- *
- * @author levi
- */
+
 public class Emprestimo {
-    private Exemplar exemplar;
-    private Usuario usuario;
+    private int cod_material;
+    private int cod_exemplar;
+    private int cod_usuario;
     private Date dataEmprestimo;
     private Date dataDevolucao;
+    private String status;
     
-    public Exemplar getExemplar(){
-        return exemplar;
+    public int getCodExemplar(){
+        return cod_exemplar;
     }
-    public Usuario getUsuario(){
-        return usuario;
+    public int getCodMaterial(){
+        return cod_material;
+    }
+    public int getCodUsuario(){
+        return cod_usuario;
+    }
+    public String getStatus(){
+        return status;
     }
     public Date getDataEmprestimo(){
         return dataEmprestimo;
