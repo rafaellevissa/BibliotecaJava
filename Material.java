@@ -1,16 +1,9 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package biblioteca;
+package BibliotecaJava;
 
-/**
- *
- * @author levi
- */
 public abstract class Material {
     private int codigo;
     private String titulo;
+    private String tipo;
     
     public int getCodigo(){
         return codigo;
@@ -18,8 +11,12 @@ public abstract class Material {
     public String getTitulo(){
         return titulo;
     }
-    public Material(int codigo, String titulo){
+    public String getTipo(){
+        return tipo;
+    }
+    public Material(int codigo, String titulo,String tipo){
         this.codigo=codigo;
         this.titulo=titulo;
+        this.tipo=tipo;
     }
 }
