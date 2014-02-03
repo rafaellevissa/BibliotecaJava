@@ -1,24 +1,18 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package biblioteca;
+package BibliotecaJava;
 
-/**
- *
- * @author levi
- */
+import java.util.ArrayList;
+
 public abstract class Usuario {
     private int codigo;
     private String nome;
+    private ArrayList<Emprestimo> MeusEmprestimos = new ArrayList<Emprestimo>();
     
     public boolean reservar(){
       return true;  
     }
-    public abstract boolean emprestar();
-    public boolean devolver(){
-        return true;
-    }
+    public abstract boolean RealizarEmprestimo();
+    public abstract boolean DevolverEmprestimo();
+        
     public int getCodigo(){
         return codigo;
     }
