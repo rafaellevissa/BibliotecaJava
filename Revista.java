@@ -1,13 +1,5 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package biblioteca;
+package BibliotecaJava;
 
-/**
- *
- * @author levi
- */
 public class Revista extends Material {
     private int edicao;
     private String mes;
@@ -23,7 +15,7 @@ public class Revista extends Material {
         return ano;
     }
     public Revista(int codigo, String titulo,int edicao, String mes, int ano){
-        super(codigo, titulo);
+        super(codigo, titulo,"Revista");
         this.edicao=edicao;
         this.mes=mes;
         this.ano=ano;
